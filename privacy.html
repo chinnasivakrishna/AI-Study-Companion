@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - AI Study Companion</title>
+  <style>
+    :root {
+      --primary: #208AEF;
+      --bg: #0A0E1A;
+      --surface: #131A2E;
+      --text: #F1F5F9;
+      --text-muted: #94A3B8;
+      --border: #1E293B;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background-color: var(--bg);
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+    h1 {
+      color: #FFFFFF;
+      font-size: 2.2rem;
+      margin: 0 0 8px 0;
+    }
+    .last-updated {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    h2 {
+      color: #60A5FA;
+      font-size: 1.4rem;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 6px;
+    }
+    p, li {
+      color: #CBD5E1;
+      font-size: 1rem;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .highlight-card {
+      background-color: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--primary);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 24px 0;
+    }
+    footer {
+      margin-top: 48px;
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+    a {
+      color: #60A5FA;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Privacy Policy</h1>
+      <p class="last-updated"><strong>Application:</strong> AI Study Companion (com.sivakrishna.aistudycompanion)<br>
+      <strong>Effective Date:</strong> October 20, 2026</p>
+    </header>
+
+    <div class="highlight-card">
+      <strong>Core Privacy Commitment:</strong> AI Study Companion is designed with a mobile-first, privacy-respecting architecture. Your uploaded PDF documents, notes, chat transcripts, and quiz results are stored locally on your device storage by default.
+    </div>
+
+    <h2>1. Information We Collect and Process</h2>
+    <p>When you use <strong>AI Study Companion</strong>, we interact with the following categories of information to provide the application's core educational features:</p>
+    <ul>
+      <li><strong>Study Documents (PDFs):</strong> When you choose to import documents (lecture notes, past papers, syllabus), the files are copied to your device's sandboxed local storage directory. We do not sell, rent, or monetize your study materials.</li>
+      <li><strong>User-Generated Study Data:</strong> Interactive study chats, quiz scores, flashcards, and revision notes created within the app are saved locally on your device via <code>AsyncStorage</code> and native device storage.</li>
+      <li><strong>Diagnostic and Device Information:</strong> Standard, non-identifiable technical data (e.g., OS version, device model, crash telemetry) may be processed to diagnose bugs and improve app stability.</li>
+    </ul>
+
+    <h2>2. How We Use Artificial Intelligence (AI Processing)</h2>
+    <p>To provide features like document question answering, citations, summarization, and quiz generation, the app interfaces with the <strong>Google Gemini API</strong> (Google Cloud Generative AI):</p>
+    <ul>
+      <li>When you submit a study question or request a summary, relevant excerpts or pages of your document are securely sent via encrypted HTTPS to Google Gemini.</li>
+      <li>Data transmitted for AI processing is utilized solely to generate your requested response in real time.</li>
+      <li>Google's enterprise Generative AI privacy terms stipulate that customer prompt data submitted through official developer tiers is not used to train foundational models without consent.</li>
+    </ul>
+
+    <h2>3. Third-Party Services and Subprocessors</h2>
+    <p>AI Study Companion integrates with trusted industry partners strictly for core app functionality:</p>
+    <ul>
+      <li><strong>Google Generative AI (Gemini API):</strong> Natural language understanding, document summarization, and quiz generation. (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>)</li>
+      <li><strong>Google Play Services:</strong> Core application delivery, in-app updates, and Google Play Store licensing.</li>
+    </ul>
+
+    <h2>4. Data Storage and Retention</h2>
+    <ul>
+      <li><strong>Local Storage:</strong> Your documents, revision sheets, and chat histories remain stored locally in your device's secure application sandbox.</li>
+      <li><strong>Data Deletion:</strong> You have full control over your data. Deleting a document inside the app immediately deletes the local file and all associated chat logs. Uninstalling the app permanently purges all local app data from your device.</li>
+    </ul>
+
+    <h2>5. Permissions Requested</h2>
+    <ul>
+      <li><strong>Storage / Document Picker:</strong> Required only when you explicitly select and import a PDF file from your device or cloud storage drive.</li>
+      <li><strong>Internet Access:</strong> Required to communicate with the Gemini AI service over secure HTTPS.</li>
+    </ul>
+
+    <h2>6. Children's Privacy</h2>
+    <p>AI Study Companion is intended for high school, university, and adult professional students. We do not knowingly collect personal identifiable information from children under the age of 13. If you believe a child has provided personal information to us, please contact us for immediate removal.</p>
+
+    <h2>7. Security Practices</h2>
+    <p>All data transmitted outside the device (such as AI queries) uses industry-standard <strong>Transport Layer Security (TLS/HTTPS)</strong> encryption to prevent unauthorized interception. API credentials, where configured, are kept in secure application memory.</p>
+
+    <h2>8. Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy from time to time. Any changes will be published directly on this page with an updated "Effective Date".</p>
+
+    <h2>9. Contact Us</h2>
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy, please contact us at:</p>
+    <p><strong>Email:</strong> <a href="mailto:support@aistudycompanion.app">support@aistudycompanion.app</a><br>
+    <strong>Developer:</strong> Siva Krishna</p>
+
+    <footer>
+      &copy; 2026 AI Study Companion. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
